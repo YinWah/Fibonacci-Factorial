@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CalculoFiboyFac">
+  <ClassDiagramComponents>
+    <Class name="CalculoFiboyFac" package="calculofiboyfac" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="datos" package="calculofiboyfac" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="num1" type="int" visibility="private"/>
+        <Field name="num2" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNum1" returnType="int" visibility="public"/>
+        <Method name="setNum1" returnType="void" visibility="public">
+          <Argument type="int" name="num1"/>
+        </Method>
+        <Method name="getNum2" returnType="int" visibility="public"/>
+        <Method name="setNum2" returnType="void" visibility="public">
+          <Argument type="int" name="num2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Home" package="calculofiboyfac" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="cerrar" type="JButton" visibility="package"/>
+        <Field name="Numero" type="JTextField" visibility="package"/>
+        <Field name="Fibonacci" type="JButton" visibility="package"/>
+        <Field name="Factorial" type="JButton" visibility="package"/>
+        <Field name="resultado" type="JLabel" visibility="package"/>
+        <Field name="resultado1" type="JTextField" visibility="package"/>
+        <Field name="nsaldo" type="double" visibility="package"/>
+        <Field name="Fact" type="int" visibility="package"/>
+        <Field name="Continuar" type="Boolean" visibility="package"/>
+        <Field name="titulo" type="JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="configurarVentana" returnType="void" visibility="public"/>
+        <Method name="iniciarComponentes" returnType="void" visibility="public"/>
+        <Method name="actionPerformed" returnType="/**
+     * En el metodo actionPerformed(ActionEvent e) se recuperan la opcion que escoge el usuario y dependiendo de la opcion
+     * el programa calcula el factorial o el fibonnaci con los datos que ingreso el usuario
+     */
+void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="calculofiboyfac.Home" target="calculofiboyfac.datos" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
